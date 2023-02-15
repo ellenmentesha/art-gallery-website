@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+body {
+    font-family: 'Big Shoulders Display', cursive;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.tablet-map,
+.desktop-map {
+    display: none;
+}
+
+/* -----------MAP------- */
+/* -----------MAP------- */
+
+.map {
+    position: relative;
+    width: 100%;
+}
+
+
+
+/* -----------LOCATION BUTTON----------- */
+/* -----------LOCATION BUTTON----------- */
+
+
+.location-btn {
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+}
+
+.btn-txt {
+    background: #151515;
+    display: flex;
+    align-items: center;
+}
+
+.btn-txt p {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.63636px;
+    color: #FFFFFF;
+    padding: 0 1.7em;
+}
+
+.arrow-left {
+    background: #D5966C;
+    padding: 24px;
+}
+
+.location-btn:hover .btn-txt {
+    background-color: #D5966C;
+}
+
+.location-btn:hover .arrow-left {
+    background-color: black;
+}
+
+
+
+/* -------------ADDRESS----------- */
+/* -------------ADDRESS----------- */
+
+.address {
+    background: #151515;
+    padding: 48px 16px 56px 16px;
+}
+
+.address h1 {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+    color: white;
+    padding-bottom: 48px;
+}
+
+.address h2 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #D5966C;
+    padding-bottom: 20px;
+}
+
+.address article {
+    font-family: 'Outfit';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.address p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+
+    padding-top: 20px;
+}
+
+
+/* -----------FOOTER---------- */
+/* -----------FOOTER---------- */
+
+footer {
+    background: #D5966C;
+    padding: 48px 32px;
+}
+
+footer p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: black;
+
+    padding: 38px 0;
+}
+
+.icons {
+    width: 100px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+img[alt=icon] {
+    filter: invert(0%) sepia(55%) hue-rotate(122deg) contrast(107%) brightness(0) saturate(100%);
+}
+
+img[alt=icon]:hover {
+    filter: none;
+}
+
+
+@media (min-width:768px) {
+    .map {
+        display: none;
+    }
+
+    .tablet-map {
+        display: block;
+    }
+
+    .address {
+        padding: 88px 40px 80px 40px;
+        display: flex;
+    }
+
+    .child1 {
+        margin-right: 68px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 56px 40px;
+    }
+
+    footer p {
+        width: 35vw;
+        padding: 0;
+    }
+}
+
+@media (min-width:1360px) {
+    .tablet-map {
+        display: none;
+    }
+
+    .desktop-map {
+        display: block;
+    }
+
+    .address {
+        padding: 104px 165px 128px 165px;
+    }
+
+    .child1 h1 {
+        font-size: 70px;
+        line-height: 70px;
+        margin-right: 220px;
+    }
+
+    .child2 h2 {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .child2 article {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+
+    .child2 p {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    footer {
+        padding: 80px 165px;
+    }
+
+    .logo {
+        width: 10em;
+
+    }
+
+    footer p {
+        width: 30vw;
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
